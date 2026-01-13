@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body{
+  font-family:Arial;
+  background:#f2f4f8;
+}
+.card{
+  width:700px;
+  height: auto;
+
+  margin:80px auto;
+  padding:25px;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 0 10px #ccc;
+  text-align:center;
+}
+input,select,button{
+  width:80%;
+  padding:10px;
+  margin:10px 0;
+  border-radius:5px;
+  border:1px solid #ccc;
+}
+button{
+  background:#4f46e5;
+  color:white;
+  border:none;
+  font-weight:bold;
+}
+button:hover{
+  background:#4338ca;
+}
+.Success{color:green;font-weight:bold}
+.Failed{color:red;font-weight:bold}
+table{
+  margin:30px auto;
+  border-collapse:collapse;
+  width:70%;
+}
+th,td{
+  border:1px solid #ccc;
+  padding:8px;
+  text-align:center;
+}
+th{
+  background:#4f46e5;
+  color:white;
+}
+
+</style>
+</head>
+<body>
+<div class="card">
+<h2>ETAPPLE</h2>
+<form  action="/upload" method="post" enctype="multipart/form-data">
+  <input type="file" name="file" required>
+  <select name="category">
+    <option>Revenue</option>
+    <option>Education</option>
+    <option>Health</option>
+    <option>Finance</option>
+  </select>
+  <input type="text" name="keywords" placeholder="Enter keywords (comma separated)">
+  <button>Upload & Check</button>
+</form>
+</div>
+</body>
+</html>
